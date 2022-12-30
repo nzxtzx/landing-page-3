@@ -2486,7 +2486,7 @@ html.locked{
         }
 
         .contact h1{
-            display: contents;
+            display: block;
             font-size: 30px;
             line-height: 80px;
             color: #000000;            
@@ -2742,6 +2742,373 @@ html.locked{
     }   
 }
 
+    .nav.element-animation{
+        opacity: 0;
+        transition: all 2s;
+        transition-delay: 0.5s;
+        transform: translateY(-50px);        
+    }
+
+    .nav.element-animation.element-show{
+        opacity: 1;
+        transition: all 2s;
+        transition-delay: 0.5s;
+        transform: translateY(0%);        
+    }
+
+  .header.element-animation {
+    /* Скроем элемент в начальном состоянии */
+    opacity: 0;
+    transition: all 2s;
+    transition-delay: 0.5s;
+    transform: translateY(-50px);
+  }
+  
+  .header.element-animation.element-show {
+    opacity: 1;
+    transition: all 2s;
+    transition-delay: 0.5s;
+    transform: translateY(0%);
+  }
+
+  .skills h1.element-animation{
+    opacity: 0;
+    transition: all 2s;
+    transition-delay: 0.5s;
+    transform: translateY(50px);  
+  }
+
+  .skills h1.element-animation.element-show{
+    opacity: 1;
+    transition: all 2s;
+    transition-delay: 0.5s;
+    transform: translateY(0%); 
+  }
+
+  .skills-card__speaking.element-animation{
+    opacity: 0;
+    transition: all 2s;
+    transition-delay: 0.25s;  
+    transform: translateX(-50px);
+  }
+
+  .skills-card__speaking.element-animation.element-show{
+    opacity: 1;
+    transition: all 2s;
+    transition-delay: 0.25s;    
+    transform: translateX(0%);
+  }
+
+  .skills-card__writing.element-animation{
+    opacity: 0;
+    transition: all 2s;
+    transition-delay: 0.25s;  
+    transform: translateY(-50px);
+  }
+
+  .skills-card__writing.element-animation.element-show{
+    opacity: 1;
+    transition: all 2s;
+    transition-delay: 0.25s; 
+    transform: translateY(0%);
+  }
+
+  .skills-card__reading.element-animation{
+    opacity: 0;
+    transition: all 2s;
+    transition-delay: 0.25s; 
+    transform: translateY(-50px); 
+  }
+
+  .skills-card__reading.element-animation.element-show{
+    opacity: 1;
+    transition: all 2s;
+    transition-delay: 0.25s; 
+    transform: translateY(0%);
+  }
+
+  .skills-card__listening.element-animation{
+    opacity: 0;
+    transition: all 2s;
+    transition-delay: 0.25s; 
+    transform: translateY(50px); 
+  }
+
+  .skills-card__listening.element-animation.element-show{
+    opacity: 1;
+    transition: all 2s;
+    transition-delay: 0.25s; 
+    transform: translateY(0%); 
+  }
+
+  @media (max-width: 768px) {
+ 
+    .skills-card__speaking.element-animation{
+        opacity: 0;
+        transition: all 2s;
+        transition-delay: 0.25s;
+        transform: translateY(50px); 
+      }
+    
+      .skills-card__speaking.element-animation.element-show{
+        opacity: 1;
+        transition: all 2s;
+        transition-delay: 0.25s;   
+        transform: translateY(0%);
+      }
+    
+      .skills-card__writing.element-animation{
+        opacity: 0;
+        transition: all 2s;
+        transition-delay: 0.25s;
+        transform: translateY(50px); 
+      }
+    
+      .skills-card__writing.element-animation.element-show{
+        opacity: 1;
+        transition: all 2s;
+        transition-delay: 0.25s;  
+        transform: translateY(0%);
+      }
+    
+      .skills-card__reading.element-animation{
+        opacity: 0;
+        transition: all 2s;
+        transition-delay: 0.25s;
+        transform: translateY(50px); 
+      }
+    
+      .skills-card__reading.element-animation.element-show{
+        opacity: 1;
+        transition: all 2s;
+        transition-delay: 0.25s;
+        transform: translateY(0%);
+      }
+    
+      .skills-card__listening.element-animation{
+        opacity: 0;
+        transition: all 2s;
+        transition-delay: 0.25s;
+        transform: translateY(50px); 
+      }
+    
+      .skills-card__listening.element-animation.element-show{
+        opacity: 1;
+        transition: all 2s;
+        transition-delay: 0.25s; 
+        transform: translateY(0%); 
+      }
+
+  }
+
+  .about-content__left.element-animation{
+    opacity: 0;
+    transition: all 2s;
+    transition-delay: 1s;
+    transform: translateX(-50px); 
+}
+  
+  .about-content__left.element-animation.element-show{
+    opacity: 1;
+    transition: all 2s;
+    transition-delay: 1s; 
+    transform: translateX(0%);     
+} 
+
+.about-content__right.element-animation{
+    opacity: 0;
+    transition: all 2s;
+    transform: translateX(50px); 
+}
+  
+  .about-content__right.element-animation.element-show{
+    opacity: 1;
+    transition: all 2s;
+    transform: translateX(0%);     
+} 
+
+@media (max-width: 768px) {
+    .about-content__left.element-animation{
+        opacity: 0;
+        transition: all 2s;
+        transition-delay: 0.25s;
+        transform: translateY(50px);  
+    }
+      
+      .about-content__left.element-animation.element-show{
+        opacity: 1;
+        transition: all 2s;
+        transition-delay: 0.25s; 
+        transform: translateY(0%)   
+    } 
+    
+    .about-content__right.element-animation{
+        opacity: 0;
+        transition: all 2s;
+        transition-delay: 0.25s;
+        transform: translateY(50px); 
+    }
+      
+      .about-content__right.element-animation.element-show{
+        opacity: 1;
+        transition: all 2s;
+        transition-delay: 0.25s; 
+        transform: translateY(0%);      
+    } 
+
+    .contact h1.element-animation{
+        opacity: 0;
+        transition: all 2s;
+        transition-delay: 0.25s;
+        transform: translateY(50px); 
+    }
+      
+    .contact h1.element-animation.element-show{
+        opacity: 1;
+        transition: all 2s;
+        transition-delay: 0.25s; 
+        transform: translateY(0%);      
+    } 
+
+    .contacts-content__left.element-animation{
+        opacity: 0;
+        transition: all 2s;
+        transition-delay: 0.25s;
+        transform: translateY(50px); 
+    }
+
+    .contacts-content__left.element-animation.element-show{
+        opacity: 1;
+        transition: all 2s;
+        transition-delay: 0.25s; 
+        transform: translateY(0%);      
+    } 
+
+    .contacts-content__right p.element-animation{
+        opacity: 0;
+        transition: all 2s;
+        transition-delay: 0.25s;
+        transform: translateY(50px); 
+    }
+
+    .contacts-content__right p.element-animation.element-show{
+        opacity: 1;
+        transition: all 2s;
+        transition-delay: 0.25s; 
+        transform: translateY(0%); 
+    }
+
+    
+    .contacts-content__right form.element-animation{
+        opacity: 0;
+        transition: all 2s;
+        transition-delay: 0.25s;
+        transform: translateY(50px); 
+    }
+
+    .contacts-content__right form.element-animation.element-show{
+        opacity: 1;
+        transition: all 2s;
+        transition-delay: 1s; 
+        transform: translateY(0%);      
+    } 
+
+    .footer a.element-animation{
+        opacity: 0;
+        transition: all 2s;
+        transition-delay: 0.25s;
+        transform: translateY(50px);         
+    }
+
+    
+    .footer a.element-animation.element-show{
+        opacity: 1;
+        transition: all 2s;
+        transition-delay: 0.25s; 
+        transform: translateY(0%);         
+    }
+
+}
+
+.pricing h1.element-animation{
+    opacity: 0;
+    transition: all 2s;
+    transform: translateY(50px);    
+}
+
+.pricing h1.element-animation.element-show{
+    opacity: 1;
+    transition: all 2s;
+    transform: translateY(0%);    
+}
+
+.pricing-card.element-animation{
+    opacity: 0;
+    transition: all 2s;
+    transform: translateY(50px); 
+}
+
+.pricing-card.element-animation.element-show{
+    opacity: 1;
+    transition: all 2s;
+    transform: translateY(0%);    
+}
+
+.contacts-content__left.element-animation{
+    opacity: 0;
+    transition: all 2s;
+    transition-delay: 0.25s;
+    transform: translateX(-50px);     
+}
+
+.contacts-content__left.element-animation.element-show{
+    opacity: 1;
+    transition: all 2s;
+    transition-delay: 0.25s;
+    transform: translateX(0%);     
+}
+
+.contacts-content__right.element-animation{
+    opacity: 0;
+    transition: all 2s;
+    transition-delay: 0.25s;
+    transform: translateX(50px);     
+}
+
+.contacts-content__right.element-animation.element-show{
+    opacity: 1;
+    transition: all 2s;
+    transition-delay: 0.25s;
+    transform: translateX(0%);     
+}
+
+.footer a:nth-child(1).element-animation{
+    opacity: 0;
+    transition: all 2s;
+    transition-delay: 0.25s;
+    transform: translateX(50px);         
+}
 
 
+.footer a:nth-child(1).element-animation.element-show{
+    opacity: 1;
+    transition: all 2s;
+    transition-delay: 0.25s; 
+    transform: translateX(0%);         
+}
+
+.footer a:nth-child(2).element-animation{
+    opacity: 0;
+    transition: all 2s;
+    transition-delay: 0.25s;
+    transform: translateX(-50px);         
+}
+
+
+.footer a:nth-child(2).element-animation.element-show{
+    opacity: 1;
+    transition: all 2s;
+    transition-delay: 0.25s; 
+    transform: translateX(0%);         
+}
 /* footer */
