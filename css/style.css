@@ -1589,11 +1589,11 @@ html.locked{
     }
     
     .about h1{
-        display: contents;
+        display: none;
     }
 
     .about-content__left h1{
-        display: none;
+        display: block;
     }
 
     .about p{
@@ -1635,10 +1635,9 @@ html.locked{
     .about{
         margin-top: 50px;
     }
-
-        
+  
     .about h1{
-        display: contents;
+        display: none;
         font-size: 24px;
     }
 
@@ -2714,7 +2713,7 @@ html.locked{
     }   
 }
 
-@media (max-width: 375px){
+@media (max-width: 425px){
     .footer a:nth-child(2){
         max-width: 180px;
     }
@@ -2899,6 +2898,20 @@ html.locked{
         transform: translateY(0%); 
       }
 
+  }
+
+  .about-content__left h1.element-animation{
+    opacity: 0;
+    transition: all 2s;
+    transition-delay: 0.25s;
+    transform: translateY(50px);    
+  }
+
+  .about-content__left h1.element-animation.element-show{
+    opacity: 1;
+    transition: all 2s;
+    transition-delay: 0.25s; 
+    transform: translateY(0%);  
   }
 
   .about-content__left.element-animation{
