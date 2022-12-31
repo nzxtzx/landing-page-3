@@ -192,6 +192,7 @@ html.locked{
     .nav{
         position: sticky;
         justify-content: stretch;
+        height: 100px;
     }
 
     .nav-logo{
